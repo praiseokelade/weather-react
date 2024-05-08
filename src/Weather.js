@@ -45,18 +45,39 @@ export default function Weather() {
           <li>Wind: {weather.wind}</li>
           <li>Icon: {weather.icon}</li>
         </ul>
+        <p>
+          This project was coded by Praise Okelade and is{" "}
+          <a
+            href="https://github.com/praiseokelade/weather-react"
+            target="_blank"
+          >
+            open-sourced
+          </a>
+        </p>
       </div>
     );
   } else {
     return (
-      <form onSubmit={handleSubmit}>
-        <input
-          type="search"
-          placeholder="Enter a city..."
-          onChange={updateCity}
-        />
-        <input type="submit" value="Search" />
-      </form>
+      <div>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            onChange={updateCity}
+          />
+          <input type="submit" value="Search" />
+        </form>
+
+        <p>
+          This project was coded by Praise Okelade and is{" "}
+          <a
+            href="https://github.com/praiseokelade/weather-react"
+            target="_blank"
+          >
+            open-sourced
+          </a>
+        </p>
+      </div>
     );
   }
 }
